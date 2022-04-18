@@ -10,7 +10,7 @@ Easy to use by providing simple api. And you can customize the style of this com
 <img src="https://raw.githubusercontent.com/lokyoung/vuejs-paginate/master/img/pagination-show.gif" width="550" />
 
 [Online demo](https://jsfiddle.net/lokyoung/u3u3nzns/)
-
+/
 ## Installation
 
 ### NPM
@@ -209,12 +209,9 @@ You can customize the inner HTML of the previous button, next button, and break 
 
 | Name | Description |
 | --- | --- |
-| `prevContent` | Previous button |
-| `nextContent` | Next button |
+| `prev` | Previous button |
+| `next` | Next button |
 | `breakViewContent` | Break view indicator |
-
-**Note**
-Slot of `prevContent` and `nextContent` are not supported after `v1.9.5`. You can directly set the HTML by `prev-text` and `next-text` props.
  
 **Example**
 ```html
@@ -225,8 +222,8 @@ Slot of `prevContent` and `nextContent` are not supported after `v1.9.5`. You ca
   :next-text="next"
   :click-handler="clickCallback">
 
-  <span slot="prevContent">Changed previous button</span>
-  <span slot="nextContent">Changed next button</span>
+  <span slot="prev">Changed previous button</span>
+  <span slot="next">Changed next button</span>
   <span slot="breakViewContent">
     <svg width="16" height="4" viewBox="0 0 16 4">
       <circle fill="#999999" cx="2" cy="2" r="2" />
