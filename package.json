@@ -1,5 +1,5 @@
 {
-  "name": "vuejs-paginate",
+  "name": "@phoenix-cg/vuejs-pages",
   "version": "2.1.1",
   "description": "A simple pagination component for Vue.js",
   "main": "dist/index.js",
